@@ -20,7 +20,7 @@ function Banner({ fetchUrl }) {
     }
 
     fetchData();
-  }, []);
+  }, [fetchUrl]);
 
   return (
     <header
@@ -44,6 +44,8 @@ function Banner({ fetchUrl }) {
 
         <p className={classes.description}>{truncate(movie?.overview, 150)}</p>
       </div>
+
+      <div className={classes["fade-bottom"]}></div>
     </header>
   );
 }
