@@ -1,11 +1,12 @@
 .row {
+  margin-left: 10px;
 }
 
 .posters {
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding: 20px;
+  padding: 20px 10px;
 }
 
 .posters::-webkit-scrollbar {
@@ -22,4 +23,12 @@
 
 .posters img:hover {
   transform: scale(1.08);
+}
+
+.poster-large {
+  max-height: 250px !important;
+}
+
+.poster-large:hover {
+  transform: scale(1.09);
 }

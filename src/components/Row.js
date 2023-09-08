@@ -4,7 +4,7 @@ import classes from "./Row.module.css";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-const Row = ({ title, fetchUrl }) => {
+const Row = ({ title, fetchUrl, isLargeRow }) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,10 @@ const Row = ({ title, fetchUrl }) => {
       <div className={classes.posters}>
         {movies.map((movie) => (
           <img
-            src={`${base_url}${movie.poster_path}`}
+            className={isLargeRow && classes["poster-large"]}
+            src={`${base_url}${
+              isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
             alt={movie.name}
             key={movie.id}
           />
