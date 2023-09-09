@@ -16,7 +16,7 @@
 
 .posters img {
   object-fit: contain;
-  width: 100%;
+  width: 150px;
   max-height: 100px;
   margin-right: 10px;
   transition: transform 350ms;
