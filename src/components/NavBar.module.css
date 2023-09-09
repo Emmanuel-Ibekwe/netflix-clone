@@ -1,6 +1,8 @@
 .nav {
   position: fixed;
   top: 0;
+  right: 0;
+
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -26,8 +28,8 @@
 
 .nav-avatar {
   width: 30px;
-  object-fit: constain;
+  object-fit: contain;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-top: 15px;
 }
