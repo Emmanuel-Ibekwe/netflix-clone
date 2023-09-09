@@ -28,6 +28,7 @@ function Banner({ fetchUrl }) {
       style={{
         backgroundSize: "cover",
         backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+        backgroundPosition: "center top",
       }}
     >
       <div className={classes.contents}>
